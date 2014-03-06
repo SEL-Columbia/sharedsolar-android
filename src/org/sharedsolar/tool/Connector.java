@@ -140,7 +140,10 @@ public class Connector {
 			String status = response.getStatusLine().toString();
 			if (status.equals("HTTP/1.1 200 OK") || status.equals("HTTP/1.0 200 OK")) {
 				InputStream is = response.getEntity().getContent();
-				String s = new Scanner(is).useDelimiter("\\A").next();
+				Scanner scanner = new Scanner(is);
+				scanner.useDelimiter("\\A");
+				String s = scanner.next();
+				scanner.close();
 				return s;
 			} else {
 				return null;
