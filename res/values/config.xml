@@ -18,7 +18,7 @@
     <string name="tokenStateExpired">-1</string>
     
     <!-- chart -->
-    <string name="refreshInterval">5000</string>
+    <integer name="refreshInterval">5000</integer>
     
     <!-- denomination -->
     <!--  mali --> 

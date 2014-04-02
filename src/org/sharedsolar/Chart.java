@@ -273,6 +273,6 @@ public class Chart extends TabActivity {
 						getString(R.string.circuitUsageUrl), Chart.this);
 				circuitUsageHandler.sendEmptyMessage(AUTO_REFRESH);
 			}
-		}, Integer.parseInt(getString(R.string.refreshInterval)));
+		}, R.integer.refreshInterval);
 	}
 }
