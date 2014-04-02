@@ -13,9 +13,9 @@
     <string name="requestTokenUrl">http://gateway.sharedsolar.org/manage/make_tokens</string>
     
     <integer name="timeoutValue">10000</integer>
-    <string name="tokenStateAtVendor">3</string>
-    <string name="tokenStateAtMeter">4</string>
-    <string name="tokenStateExpired">-1</string>
+    <integer name="tokenStateAtVendor">3</integer>
+    <integer name="tokenStateAtMeter">4</integer>
+    <integer name="tokenStateExpired">-1</integer>
     
     <!-- chart -->
     <integer name="refreshInterval">5000</integer>

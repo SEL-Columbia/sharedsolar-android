@@ -31,9 +31,9 @@ public class DatabaseAdapter {
 	
 	public DatabaseAdapter(Context context) {
 		this.context = context;
-		TOKEN_STATE_AT_VENDOR = Integer.parseInt(context.getString(R.string.tokenStateAtVendor).toString());
-		TOKEN_STATE_AT_METER = Integer.parseInt(context.getString(R.string.tokenStateAtMeter).toString());
-		TOKEN_STATE_EXPIRED = Integer.parseInt(context.getString(R.string.tokenStateExpired).toString());
+		TOKEN_STATE_AT_VENDOR = R.integer.tokenStateAtVendor;
+		TOKEN_STATE_AT_METER  = R.integer.tokenStateAtMeter;
+		TOKEN_STATE_EXPIRED   = R.integer.tokenStateExpired;
 	}
 	
 	public DatabaseAdapter open() throws SQLException {
