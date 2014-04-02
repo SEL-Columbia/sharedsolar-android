@@ -1,32 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>   
-	<!-- meter url -->
-	<string name="syncUrl">http://192.168.1.101:9191/fieldtech/device/sync</string>
+  <!-- meter url -->
+  <!-- production (field use with hardware) 
+  <string name="syncUrl">http://192.168.1.101:9191/fieldtech/device/sync</string>
     <string name="validateUrl">http://192.168.1.101:9191/vendor/validate</string>
     <string name="accountListUrl">http://192.168.1.101:9191/vendor/accounts/list</string>
     <string name="toggleStatusUrl">http://192.168.1.101:9191/vendor/account/toggle</string>
     <string name="addCreditUrl">http://192.168.1.101:9191/vendor/account/credit/add</string>
-	<string name="circuitUsageUrl">http://192.168.1.101:9191/admin/circuits/use</string>
-    
-    <!-- gateway url -->
+  <string name="circuitUsageUrl">http://192.168.1.101:9191/admin/circuits/use</string>
+  -->
+    <!-- development (using sharedsolar_simulator.py) -->
+    <string name="syncUrl">http://198.27.127.57:8000/cgi-bin/shared_solar_simulator.py/?APPURL=/fieldtech/device/sync</string>
+    <string name="validateUrl">http://198.27.127.57:8000/cgi-bin/shared_solar_simulator.py/?APPURL=/vendor/validate</string>
+    <string name="accountListUrl">http://198.27.127.57:8000/cgi-bin/shared_solar_simulator.py/?APPURL=/vendor/accounts/list</string>
+    <string name="toggleStatusUrl">http://198.27.127.57:8000/cgi-bin/shared_solar_simulator.py/?APPURL=/vendor/account/toggle</string>
+    <string name="addCreditUrl">http://198.27.127.57:8000/cgi-bin/shared_solar_simulator.py/?APPURL=/vendor/account/credit/add</string>
+    <string name="circuitUsageUrl">http://198.27.127.57:8000/cgi-bin/shared_solar_simulator.py/?APPURL=/admin/circuits/use</string>
+  
+  <!-- gateway url -->
+    <!-- production (field use with hardware)
     <string name="uploadTokenUrl">http://gateway.sharedsolar.org/manage/update_tokens</string>
     <string name="requestTokenUrl">http://gateway.sharedsolar.org/manage/make_tokens</string>
-    
-    <integer name="timeoutValue">10000</integer>
-    <integer name="tokenStateAtVendor">3</integer>
-    <integer name="tokenStateAtMeter">4</integer>
-    <integer name="tokenStateExpired">-1</integer>
-    
-    <!-- chart -->
-    <integer name="refreshInterval">5000</integer>
-    
-    <!-- denomination - drives list of possible credit units - set according to the local currency used -->
-    <integer-array name="denominationValues">
-        <item>500</item>
-        <item>1000</item>
-        <item>2000</item>
-    </integer-array>
-    
-    <!-- debugMode - set to false for production -->
-    <bool name="debugMode">true</bool>    
+    -->
+    <!-- development (using sharedsolar_simulator.py) -->
+    <string name="uploadTokenUrl">http://198.27.127.57:8000/cgi-bin/shared_solar_simulator.py/?APPURL=/manage/update_tokens</string>
+    <string name="requestTokenUrl">http://198.27.127.57:8000/cgi-bin/shared_solar_simulator.py/?APPURL=/manage/make_tokens</string>
+
+  <integer name="timeoutValue">10000</integer>
+  <integer name="tokenStateAtVendor">3</integer>
+  <integer name="tokenStateAtMeter">4</integer>
+  <integer name="tokenStateExpired">-1</integer>
+
+  <!-- chart -->
+  <integer name="refreshInterval">5000</integer>
+
+  <!-- denomination - drives list of possible credit units - set according to the local currency used -->
+  <integer-array name="denominationValues">
+      <item>500</item>
+      <item>1000</item>
+      <item>2000</item>
+  </integer-array>
+
+  <!-- debugMode - set to false for production -->
+  <bool name="debugMode">true</bool>    
 </resources>
