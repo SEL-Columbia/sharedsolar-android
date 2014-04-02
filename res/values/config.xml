@@ -12,7 +12,7 @@
     <string name="uploadTokenUrl">http://gateway.sharedsolar.org/manage/update_tokens</string>
     <string name="requestTokenUrl">http://gateway.sharedsolar.org/manage/make_tokens</string>
     
-    <string name="timeoutValue">10000</string>
+    <integer name="timeoutValue">10000</integer>
     <string name="tokenStateAtVendor">3</string>
     <string name="tokenStateAtMeter">4</string>
     <string name="tokenStateExpired">-1</string>

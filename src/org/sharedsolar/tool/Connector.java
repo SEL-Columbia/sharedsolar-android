@@ -40,7 +40,7 @@ public class Connector {
 	private final int SOCKET_TIMEOUT;
 	
 	public Connector(Context context) {
-		TIMEOUT = Integer.parseInt(context.getString(R.string.timeoutValue).toString());
+		TIMEOUT = R.integer.timeoutValue;
 		SOCKET_TIMEOUT = TIMEOUT; 
 	}
 	
