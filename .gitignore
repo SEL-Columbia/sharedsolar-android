@@ -3,3 +3,4 @@ bin/
 proguard/
 .settings/
 gen/org/sharedsolar/R.java
+gen/org/sharedsolar/BuildConfig.java
