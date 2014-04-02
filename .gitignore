@@ -2,4 +2,4 @@
 bin/
 proguard/
 .settings/
-
+gen/org/sharedsolar/R.java
