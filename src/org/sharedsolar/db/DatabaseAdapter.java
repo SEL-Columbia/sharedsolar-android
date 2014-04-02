@@ -96,9 +96,8 @@ public class DatabaseAdapter {
 	
 	public ArrayList<CreditSummaryModel> getCreditSummaryModelList() {
 		ArrayList<CreditSummaryModel> modelList = new ArrayList<CreditSummaryModel>();
-		String[] denominationValues = context.getResources().getStringArray(R.array.denominationValues);
-		for (String s : denominationValues) {
-			int denomination = Integer.parseInt(s);
+		int[] denominationValues = context.getResources().getIntArray(R.array.denominationValues);
+		for (int denomination : denominationValues) {
 			CreditSummaryModel model = new CreditSummaryModel(denomination, 
 					getTokenCountAtVendor(denomination));
 			modelList.add(model);

@@ -20,19 +20,12 @@
     <!-- chart -->
     <integer name="refreshInterval">5000</integer>
     
-    <!-- denomination -->
-    <!--  mali --> 
-    <string-array name="denominationValues">
+    <!-- denomination - drives list of possible credit units - set according to the local currency used -->
+    <integer-array name="denominationValues">
         <item>500</item>
         <item>1000</item>
         <item>2000</item>
-    </string-array>
-    <!-- uganda
-    <string-array name="denominationValues">
-        <item>2000</item>
-        <item>5000</item>
-        <item>10000</item>
-    </string-array>-->
+    </integer-array>
     
     <!-- debugMode - set to false for production -->
     <bool name="debugMode">true</bool>    
