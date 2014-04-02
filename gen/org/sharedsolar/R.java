@@ -16,6 +16,17 @@ public final class R {
     }
     public static final class attr {
     }
+    public static final class bool {
+        /**  uganda
+    <string-array name="denominationValues">
+        <item>2000</item>
+        <item>5000</item>
+        <item>10000</item>
+    </string-array>
+ debugMode - set to false for production 
+         */
+        public static final int debugMode=0x7f060000;
+    }
     public static final class drawable {
         public static final int ic_tab_chart=0x7f020000;
         public static final int ic_tab_credit=0x7f020001;
@@ -40,56 +51,56 @@ public final class R {
         public static final int refresh=0x7f020014;
     }
     public static final class id {
-        public static final int aboutMenuItem=0x7f070031;
-        public static final int accountListAid=0x7f070003;
-        public static final int accountListBtn=0x7f07002c;
-        public static final int accountListCr=0x7f070004;
-        public static final int accountRefreshImg=0x7f070001;
-        public static final int accountRefreshLayout=0x7f070000;
-        public static final int accountStatus=0x7f070002;
-        public static final int accountTokenHistoryListAid=0x7f070005;
-        public static final int availableCredit=0x7f070009;
-        public static final int chartAutoRefreshMenuItem=0x7f07002f;
-        public static final int chartBtn=0x7f07002d;
-        public static final int chartLayout=0x7f070008;
-        public static final int chartRefreshMenuItem=0x7f07002e;
-        public static final int creditSummaryBtn=0x7f07002b;
-        public static final int creditSummaryCount=0x7f07000b;
-        public static final int creditSummaryDenomination=0x7f07000a;
-        public static final int creditSummaryTotal=0x7f07000c;
-        public static final int logoutBtn=0x7f07001d;
-        public static final int syncWithMeterBtn=0x7f07001c;
-        public static final int tableLayout1=0x7f070017;
-        public static final int techAddCreditAddedCount=0x7f070013;
-        public static final int techAddCreditAddedTV=0x7f07000e;
-        public static final int techAddCreditBtn=0x7f07001b;
-        public static final int techAddCreditDenomination=0x7f070012;
-        public static final int techAddCreditMinusBtn=0x7f070011;
-        public static final int techAddCreditOwnCount=0x7f070014;
-        public static final int techAddCreditPlusBtn=0x7f070010;
-        public static final int techAddCreditReceiptInfo=0x7f070015;
-        public static final int techAddCreditReceiptOkBtn=0x7f070016;
-        public static final int techAddCreditSubmitBtn=0x7f07000f;
-        public static final int techAuthBtn=0x7f07001a;
-        public static final int techLoginMenuItem=0x7f070030;
-        public static final int techPassword=0x7f070019;
-        public static final int techUsername=0x7f070018;
-        public static final int tokenListAid=0x7f07001e;
-        public static final int tokenListDenomination=0x7f070007;
-        public static final int tokenListTimestamp=0x7f070006;
-        public static final int vendorAddCreditAddedCount=0x7f070027;
-        public static final int vendorAddCreditAddedTV=0x7f070021;
-        public static final int vendorAddCreditAid=0x7f07001f;
-        public static final int vendorAddCreditBalanceTV=0x7f070020;
-        public static final int vendorAddCreditDenomination=0x7f070026;
-        public static final int vendorAddCreditMinusBtn=0x7f070025;
-        public static final int vendorAddCreditNewBalanceTV=0x7f070022;
-        public static final int vendorAddCreditPlusBtn=0x7f070024;
-        public static final int vendorAddCreditReceiptInfo=0x7f070029;
-        public static final int vendorAddCreditReceiptOkBtn=0x7f07002a;
-        public static final int vendorAddCreditRemainCount=0x7f070028;
-        public static final int vendorAddCreditSubmitBtn=0x7f070023;
-        public static final int vendorLoginBtn=0x7f07000d;
+        public static final int aboutMenuItem=0x7f080031;
+        public static final int accountListAid=0x7f080003;
+        public static final int accountListBtn=0x7f08002c;
+        public static final int accountListCr=0x7f080004;
+        public static final int accountRefreshImg=0x7f080001;
+        public static final int accountRefreshLayout=0x7f080000;
+        public static final int accountStatus=0x7f080002;
+        public static final int accountTokenHistoryListAid=0x7f080005;
+        public static final int availableCredit=0x7f080009;
+        public static final int chartAutoRefreshMenuItem=0x7f08002f;
+        public static final int chartBtn=0x7f08002d;
+        public static final int chartLayout=0x7f080008;
+        public static final int chartRefreshMenuItem=0x7f08002e;
+        public static final int creditSummaryBtn=0x7f08002b;
+        public static final int creditSummaryCount=0x7f08000b;
+        public static final int creditSummaryDenomination=0x7f08000a;
+        public static final int creditSummaryTotal=0x7f08000c;
+        public static final int logoutBtn=0x7f08001d;
+        public static final int syncWithMeterBtn=0x7f08001c;
+        public static final int tableLayout1=0x7f080017;
+        public static final int techAddCreditAddedCount=0x7f080013;
+        public static final int techAddCreditAddedTV=0x7f08000e;
+        public static final int techAddCreditBtn=0x7f08001b;
+        public static final int techAddCreditDenomination=0x7f080012;
+        public static final int techAddCreditMinusBtn=0x7f080011;
+        public static final int techAddCreditOwnCount=0x7f080014;
+        public static final int techAddCreditPlusBtn=0x7f080010;
+        public static final int techAddCreditReceiptInfo=0x7f080015;
+        public static final int techAddCreditReceiptOkBtn=0x7f080016;
+        public static final int techAddCreditSubmitBtn=0x7f08000f;
+        public static final int techAuthBtn=0x7f08001a;
+        public static final int techLoginMenuItem=0x7f080030;
+        public static final int techPassword=0x7f080019;
+        public static final int techUsername=0x7f080018;
+        public static final int tokenListAid=0x7f08001e;
+        public static final int tokenListDenomination=0x7f080007;
+        public static final int tokenListTimestamp=0x7f080006;
+        public static final int vendorAddCreditAddedCount=0x7f080027;
+        public static final int vendorAddCreditAddedTV=0x7f080021;
+        public static final int vendorAddCreditAid=0x7f08001f;
+        public static final int vendorAddCreditBalanceTV=0x7f080020;
+        public static final int vendorAddCreditDenomination=0x7f080026;
+        public static final int vendorAddCreditMinusBtn=0x7f080025;
+        public static final int vendorAddCreditNewBalanceTV=0x7f080022;
+        public static final int vendorAddCreditPlusBtn=0x7f080024;
+        public static final int vendorAddCreditReceiptInfo=0x7f080029;
+        public static final int vendorAddCreditReceiptOkBtn=0x7f08002a;
+        public static final int vendorAddCreditRemainCount=0x7f080028;
+        public static final int vendorAddCreditSubmitBtn=0x7f080023;
+        public static final int vendorLoginBtn=0x7f08000d;
     }
     public static final class layout {
         public static final int account_detail=0x7f030000;
@@ -115,8 +126,8 @@ public final class R {
         public static final int vendor_home=0x7f030014;
     }
     public static final class menu {
-        public static final int chart_menu=0x7f060000;
-        public static final int login_menu=0x7f060001;
+        public static final int chart_menu=0x7f070000;
+        public static final int login_menu=0x7f070001;
     }
     public static final class string {
         public static final int about=0x7f040015;
