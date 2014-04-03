@@ -26,7 +26,12 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import android.util.Log;
+
 public class TechAddCredit extends ListActivity {
+	// the next two lines are for logging, if "debugMode" in config.xml is true
+	private final String TAG = this.getClass().getSimpleName();
+	private static boolean DEBUG;
 
 	private ArrayList<CreditSummaryModel> modelList;
 	private ArrayList<CreditSummaryModel> addedModelList;
@@ -41,6 +46,8 @@ public class TechAddCredit extends ListActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.tech_add_credit);
+		
+		DEBUG = getResources().getBoolean(R.bool.debugMode);
 
 		// get model list and token at meter from db
 		dbAdapter = new DatabaseAdapter(this);
@@ -75,6 +82,7 @@ public class TechAddCredit extends ListActivity {
 				}.start();
 			}
 		} catch (JSONException e) {
+			if (DEBUG) Log.d(TAG, e.toString());
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
